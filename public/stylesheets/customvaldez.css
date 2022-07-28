@@ -61,7 +61,7 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
-.activo {
+.active {
     color: rgb(255, 68, 0);
     text-shadow: 0px 5px 6px rgba(0, 0, 0, 0.49);
 }
