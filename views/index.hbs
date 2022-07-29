@@ -306,7 +306,7 @@
                 <p id="failure">Hubo un error, el mensaje no fue enviado.</p>
                 <p id="success">Su mensaje fue enviado correctamente, muchas gracias!</p>
 
-                <form method="post" action="/index">
+                <form method="post" action="#section-5">
                     <div>
                         <label for="name">
                             <span class="required">Nombre: *</span>
@@ -343,7 +343,8 @@
                         </label>
                     </div>
                     <div>
-                        <button name="submit" type="submit" id="submit">ENVIAR</button>
+                        <button type="submit" id="submit">ENVIAR</button>
+                        <h2 class="mensaje">{{message}}</h2> 
                     </div>
                 </form>
             </div>

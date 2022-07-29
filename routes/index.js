@@ -9,12 +9,13 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', async function (req, res, next) {
-  // console.log(req.body)
+  // console.log(req.body);
   var nombre = req.body.nombre;
   var apellido = req.body.apellido;
   var email = req.body.email;
   var telefono = req.body.telefono;
   var mensaje = req.body.mensaje; 
+  
 
   var obj = {
     to: 'leandrovaldez99@yahoo.com.ar',
@@ -34,9 +35,8 @@ router.post('/', async function (req, res, next) {
 
   var info = await transport.sendMail(obj);
 
-  res.render('contacto', {
+  res.render('index', {
     message: 'Mensaje enviado correctamente',
-    isContacto: true
   });
 
 })

@@ -484,7 +484,7 @@ nav ul li a:hover {
     float: left;
     left: 660px;
     position: absolute;
-    margin-top: 130px;
+    margin-top: 115px;
     margin-left: -260px;
     border-radius: 15px;
     -webkit-border-radius: 7px;
@@ -570,6 +570,12 @@ textarea:required {
 #success {
     color: #6EA070;
     display: none;
+}
+
+.mensaje{
+    color: rgb(255, 255, 255);
+    margin-top: 8px ;
+    text-align: center;
 }
 
 /* Make form look nice on smaller screens */
