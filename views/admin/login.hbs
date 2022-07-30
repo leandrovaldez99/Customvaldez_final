@@ -1,23 +1,11 @@
-<div class="container margenes">
-    <div class="row">
-        <div class="col">
-            <form action="/admin/login" method="post">
-                <div class="mb-3">
-                    <input type="text" class="form-control"
-                        placeholder="Usuario" name="user">
-                </div>
-                <div class="mb-3">
-                    <input type="password" class="form-control"
-                        placeholder="Contraseña" name="password">
-                </div>
-                <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-3">ingresar</button>
-                </div>
-
-            </form>
-            {{#if error}}
-            <p>usuario y/o contraseña son incorrectas</p>
-            {{/if}}
-        </div>
-    </div>
+<div class="login fondodiv">
+  <h1>Iniciar sesion</h1>
+  <form method="post">
+    <input type="text" name="user" placeholder="Usuario" required="required" />
+    <input type="password" name="password" placeholder="Contraseña" required="required" />
+    <button type="submit" class=" btn btn-primary btn-block btn-large">Entrar</button>
+    {{#if error}}
+    <p class="error">usuario y/o contraseña son incorrectas</p>
+    {{/if}}
+  </form>
 </div>
